@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue!</title>
+	<meta charset="utf-8">
+	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+</head>
+<body>
+	<div id="vue-app">
+		<h1>{{ greet('night') }} </h1>
+		<p> {{ name }} </p>
+		<p> {{ job }}
+		<p><a v-bind:href="website">去往百度</a></p>
+		<p><input type="text" v-bind:value="val" name="input"></p>
+		<p v-html="websiteTag"></p>   <!-- 会把websiteTag绑定到text里 -->
+	</div>
+
+
+<script src = "app1.js" type="text/javascript"></script>
+</body>
+</html>

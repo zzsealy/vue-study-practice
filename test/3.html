@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>学习vue！</title>
+	<meta charset="utf-8">
+	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>键盘事件, 还有双向数据绑定。双向数据绑定 需要 input/ select/ textarea</h1>
+		<label>姓名:</label>
+		<!-- <input  ref="name" type="text" v-on:keyup="logName " name="dai"> -->
+		<input  type="text" v-model="name" >
+		<span>{{ name }}</span>
+		<label>年龄:</label>
+		<!-- <input ref="age"   type="text" v-on:keyup="logAge" name="rui"> -->
+		<input  type="text"  v-model="age">
+		<span>{{ age }}</span>
+	</div>
+	<script src="app3.js" type="text/javascript"></script>
+</body>
+</html>

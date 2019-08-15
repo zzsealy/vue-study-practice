@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue 条件语句</title>
+	<meta charset="utf-8">
+	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>v-if 条件语句</h1>
+		<button v-on:click="error = !error">Toggle Error</button>
+		<button v-on:click="success = ! success">Toggle Success</button>
+		<!--
+		<p v-if="error">网络连接错误 404</p>
+		<p v-else-if="success">网络连接成功 200</p>	-->
+
+		<p v-show="error">网络连接错误 404</p>
+		<p v-show="success">网络连接成功 200</p>
+		<!-- 标签一直存在，只不过display属性是None， 看不到而已 -->
+
+	</div>
+
+<script src="app5.js" type="text/javascript"></script>
+</body>
+</html>

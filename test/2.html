@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>学习vue！</title>
+	<meta charset="utf-8">
+	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="vue-app">
+		<h1>Event!</h1>
+		<button v-on:click.once ="add(1)">涨一岁</button>
+		<button v-on:click="subtract(1)">减一岁</button>
+		<button v-on:dblclick="add(10)">涨10岁</button>
+		<button v-on:dblclick="subtract(10)">减10岁</button>
+		<p>my age is {{ age }}</p>
+		<div id="canvas" v-on:mousemove='updateXY'>
+			{{ x }}, {{ y }}-
+			<span @mousemove="stopmoving">StopMoving</span>   <!-- 也可以写成mousemove.stop=“” -->
+		</div>
+		<a v-on:click.prevent="alert()" href="https://www.baidu.com">去百度</a>
+	</div>
+
+<script src="app2.js" type="text/javascript"></script>
+</body>
+</html>
